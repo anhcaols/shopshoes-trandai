@@ -1,0 +1,42 @@
+.sidebar {
+  position: fixed;
+  top: 91px;
+  left: 20px;
+  bottom: 0;
+  background-color: #f8f9fa;
+  width: 300px;
+  border-top: 1.5px solid #f0eded;
+  border-right: 1.5px solid #f0eded;
+  list-style: none;
+  padding: 30px 15px;
+
+  li {
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    a {
+      color: #212529;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+    }
+  }
+  li:not(.item-active) {
+    &:hover {
+      background-color: rgb(25, 135, 84, 0.7);
+      color: #f8f9fa;
+    }
+  }
+
+  .item-active {
+    background-color: #198754;
+    a {
+      color: #f8f9fa;
+    }
+  }
+
+  .item-icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}
