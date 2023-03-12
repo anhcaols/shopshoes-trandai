@@ -129,7 +129,7 @@ function HeaderLayout() {
     <HeaderWrapper>
       <Box>
         <Link to="/">
-          <img className="w-20 h-10 sm:w-36 sm:h-16" src="assets/images/logo.png" alt="logo" />
+          <img className="w-20 h-10 sm:w-36 sm:h-16" src="/assets/images/logo.png" alt="logo" />
         </Link>
       </Box>
       <HeaderNav>

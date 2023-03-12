@@ -2,7 +2,9 @@ import ForgetPage from '@/pages/auth/forget';
 import LoginPage from '@/pages/auth/login';
 import RegisterPage from '@/pages/auth/register';
 import ResetPasswordPage from '@/pages/auth/reset-password';
+import CartPage from '@/pages/cart/Cart';
 import HomePage from '@/pages/home';
+import ShoesDetailPage from '@/pages/shoes-detail/ShoesDetail';
 
 export const routes = [
   {
@@ -28,5 +30,13 @@ export const routes = [
     path: '/auth/reset-password',
     component: ResetPasswordPage,
     layout: 'AuthenticationLayout',
+  },
+  {
+    path: '/shoes/:id',
+    component: ShoesDetailPage,
+  },
+  {
+    path: '/cart',
+    component: CartPage,
   },
 ];
