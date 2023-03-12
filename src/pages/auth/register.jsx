@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 function RegisterPage() {
   const navigate = useNavigate();
   const theme = useTheme();
-  const mdDown = useMediaQuery(theme.breakpoints.down('sm'));
+  const smDown = useMediaQuery(theme.breakpoints.down('sm'));
 
   const handleRegister = () => {
     // TODO handle register with api
@@ -23,12 +23,12 @@ function RegisterPage() {
               Vui lòng đăng ký tài khoản cá nhân của bạn nếu bạn muốn sử dụng tất cả các sản phẩm của chúng tôi.
             </p>
           </Box>
-          <Box display="flex" flexDirection={mdDown ? 'column' : 'row'} gap={mdDown ? 3 : 1}>
+          <Box display="flex" flexDirection={smDown ? 'column' : 'row'} gap={smDown ? 3 : 1}>
             <TextField name="username" label="Tên Tài Khoản" fullWidth />
             <TextField name="fullName" label="Họ tên" fullWidth />
           </Box>
           <TextField name="email" label="Email" fullWidth />
-          <Box display="flex" flexDirection={mdDown ? 'column' : 'row'} gap={mdDown ? 3 : 1}>
+          <Box display="flex" flexDirection={smDown ? 'column' : 'row'} gap={smDown ? 3 : 1}>
             <TextField name="password" label="Mật khẩu" fullWidth />
             <TextField name="confirm-password" label="Xác nhận mật khẩu" fullWidth />
           </Box>
