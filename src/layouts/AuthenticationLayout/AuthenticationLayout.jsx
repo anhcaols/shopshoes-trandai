@@ -1,6 +1,7 @@
 import { Box, styled } from '@mui/material';
 import { Stack } from '@mui/system';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AuthWrapper = styled(Box)(() => ({
   background: '#b2b8c8',
@@ -23,7 +24,14 @@ const StyledBody = styled(Stack)(() => ({
 function AuthenticationLayout({ children }) {
   return (
     <AuthWrapper>
-      <StyledBody>{children}</StyledBody>
+      <StyledBody>
+        <Box display="flex" justifyContent="center" mb={2}>
+          <Link to="/">
+            <img className="w-36 h-14 " src="/assets/images/logo.png" alt="logo" />
+          </Link>
+        </Box>
+        {children}
+      </StyledBody>
     </AuthWrapper>
   );
 }
