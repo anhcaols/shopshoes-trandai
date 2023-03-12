@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 function FooterLayout() {
   return (
     <Box py={4} sx={{ background: '#1e1e1e', color: '#fff' }}>
-      <Box sx={{ maxWidth: 1280, margin: '0 auto' }}>
+      <Box sx={{ maxWidth: 1280, margin: '0 auto', padding: '0 16px' }}>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={6} md={3}>
             <Stack>
               <h3 className="text-lg font-semibold uppercase mb-2">Nhà Phân Phối Độc Quyền</h3>
               <Stack spacing={1} className="cursor-pointer">
@@ -19,7 +19,7 @@ function FooterLayout() {
               </Stack>
             </Stack>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={6} md={3}>
             <Stack>
               <h3 className="text-lg font-semibold uppercase mb-2">DANH MỤC NỔI BẬT</h3>
               <Stack spacing={1} className="cursor-pointer">
@@ -29,7 +29,7 @@ function FooterLayout() {
               </Stack>
             </Stack>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={6} md={3}>
             <Stack>
               <h3 className="text-lg font-semibold uppercase mb-2">CHÍNH SÁCH CÔNG TY</h3>
               <Stack spacing={1} className="cursor-pointer">
@@ -40,7 +40,7 @@ function FooterLayout() {
               </Stack>
             </Stack>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={6} md={3}>
             <Stack>
               <h3 className="text-lg font-semibold uppercase mb-2">Theo dõi chúng tôi</h3>
               <Box display="flex" gap={1}>

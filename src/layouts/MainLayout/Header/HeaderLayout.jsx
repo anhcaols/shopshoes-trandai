@@ -22,16 +22,11 @@ import CartItem from './CartItem';
 const HeaderWrapper = styled(Box)(({ theme }) => ({
   maxWidth: 1280,
   margin: '0 auto',
-  height: 84,
-
-  // background: '#f8f8f8',
-  // padding: '0 64px',
+  height: 94,
+  padding: '0 16px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  [theme.breakpoints.down('md')]: {
-    padding: '0 16px',
-  },
 }));
 
 const HeaderNav = styled(Box)(({ theme }) => ({
@@ -230,11 +225,12 @@ function HeaderLayout() {
                 <Divider />
                 <Box display="flex" justifyContent="space-between">
                   <p className="text-lg font-medium">Tổng tiền: </p>
-                  <p className="text-lg font-medium text-primary">2.490.000₫</p>
+                  <p className="text-lg font-medium text-[#cc1e1e]">
+                    2.490.000<span className="text-xl text-[#cc1e1e] font-semibold">₫</span>
+                  </p>
                 </Box>
                 <Box display="flex" justifyContent="flex-end" gap={2}>
                   <Button variant="contained">Xem giỏ hàng</Button>
-                  <Button variant="contained">Thanh toán</Button>
                 </Box>
               </Stack>
             </CartWrapper>
