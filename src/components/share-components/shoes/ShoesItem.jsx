@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const ShoesWrapper = styled(Box)(() => ({
   boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px',
   borderRadius: 6,
+  backgroundColor: '#fff',
 }));
 
 const ShoesName = styled(Typography)(() => ({

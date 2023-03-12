@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function FooterLayout() {
   return (
     <Box py={4} sx={{ background: '#1e1e1e', color: '#fff' }}>
-      <Box sx={{ maxWidth: 1280, margin: '0 auto', padding: '0 16px' }}>
+      <Box sx={{ maxWidth: 1240, margin: '0 auto', padding: '0 16px' }}>
         <Grid container spacing={3}>
           <Grid item xs={6} md={3}>
             <Stack>

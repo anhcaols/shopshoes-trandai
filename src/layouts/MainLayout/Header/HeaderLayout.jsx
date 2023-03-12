@@ -20,7 +20,7 @@ import { ShoppingCartOutlined, SearchOutlined, Close, List } from '@mui/icons-ma
 import CartItem from './CartItem';
 
 const HeaderWrapper = styled(Box)(({ theme }) => ({
-  maxWidth: 1280,
+  maxWidth: 1240,
   margin: '0 auto',
   height: 94,
   padding: '0 16px',
@@ -134,26 +134,28 @@ function HeaderLayout() {
       </Box>
       <HeaderNav>
         <p>
-          <Link href="/">TRANG CHỦ</Link>
+          <Link to="/">TRANG CHỦ</Link>
         </p>
         <p>
-          <Link href="/">SẢN PHẨM</Link>
+          <Link to="/">SẢN PHẨM</Link>
         </p>
         <p>
-          <Link href="/">GIỚI THIỆU</Link>
+          <Link to="/">GIỚI THIỆU</Link>
         </p>
         <p>
-          <Link href="/">TRỢ GIÚP</Link>
+          <Link to="/">TRỢ GIÚP</Link>
         </p>
       </HeaderNav>
-      <Box display="flex" alignItems="center" gap={3}>
+      <Box display="flex" alignItems="center" justifyContent="flex-end">
         {/* Not login */}
-        <Link to="/" className="hover:text-primary">
+        <Link to="/" className="hover:text-primary ">
           <SearchOutlined />
         </Link>
-        <Box onClick={toggleCart} className="cursor-pointer relative">
-          <ShoppingCartOutlined />
-          <CartNumber>10</CartNumber>
+        <Box className="px-6">
+          <Box onClick={toggleCart} className="cursor-pointer relative">
+            <ShoppingCartOutlined />
+            <CartNumber>10</CartNumber>
+          </Box>
         </Box>
 
         {/* Login success */}

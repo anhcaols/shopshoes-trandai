@@ -9,11 +9,11 @@ const MainLayout = ({ children }) => {
   const location = useLocation();
 
   return (
-    <div>
+    <div className="bg-[#f5f5f5]">
       <HeaderLayout />
       <Box>
         {location.pathname === '/' && <SimpleSlider />}
-        <Box className="max-w-[1280px] mx-auto py-24">{children}</Box>
+        <Box className="max-w-[1240px] mx-auto pt-6 px-4 pb-24">{children}</Box>
       </Box>
       <FooterLayout />
     </div>

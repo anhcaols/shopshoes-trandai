@@ -14,7 +14,7 @@ const AuthWrapper = styled(Box)(() => ({
 }));
 
 const StyledBody = styled(Stack)(() => ({
-  background: '#fff',
+  backgroundColor: '#f5f5f5',
   width: 600,
   height: 'auto',
   padding: 40,

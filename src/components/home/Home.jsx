@@ -77,7 +77,7 @@ function Home() {
   };
   return (
     <Box>
-      <h2 className=" font-semibold text-4xl text-center">Sản phẩm của chúng tôi</h2>
+      <h2 className=" font-semibold text-4xl text-center mt-10">Sản phẩm của chúng tôi</h2>
       <Box display="flex" justifyContent="flex-end" mt={8} mb={3}>
         <FormControl style={{ width: 280 }}>
           <InputLabel id="demo-simple-select-label">Chọn Lọc</InputLabel>
@@ -95,7 +95,7 @@ function Home() {
           </Select>
         </FormControl>
       </Box>
-      <Grid container spacing={2} width="100%" sx={{ marginLeft: 0 }}>
+      <Grid container spacing={2} width="100%">
         {shoesList.map((shoes) => (
           <Grid item xs={6} md={3}>
             <ShoesItem key={shoes.id} shoes={shoes} />
