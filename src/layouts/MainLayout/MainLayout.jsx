@@ -2,7 +2,7 @@ import React from 'react';
 import { Box } from '@mui/material';
 import HeaderLayout from './Header/HeaderLayout';
 import FooterLayout from './FooterLayout';
-import SimpleSlider from '@/pages/home/Slider';
+import SimpleSlider from '@/components/home/Slider';
 import { useLocation } from 'react-router-dom';
 
 const MainLayout = ({ children }) => {

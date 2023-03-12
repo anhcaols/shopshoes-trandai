@@ -19,12 +19,12 @@ function CartItem({ cart }) {
       <Divider className="pt-2" />
       <Box display="flex" gap={2} alignItems="center" className="relative">
         <Box className="w-30 h-24 ">
-          <Link to="/">
+          <Link to={`/shoes/${cart.id}`}>
             <img className="w-full h-full " src={cart.image} alt="img" />
           </Link>
         </Box>
         <Box display="flex" flexDirection="column">
-          <Link to="/">
+          <Link to={`/shoes/${cart.id}`}>
             <ShoesName className="hover:text-primary">{cart.name}</ShoesName>
           </Link>
           <p className="text-sm">

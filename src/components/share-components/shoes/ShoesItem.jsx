@@ -22,11 +22,11 @@ const ShoesName = styled(Typography)(() => ({
 function ShoesItem({ shoes }) {
   return (
     <ShoesWrapper>
-      <Link to="">
+      <Link to={`/shoes/${shoes.id}`}>
         <img src={shoes.image} alt="img" />
       </Link>
       <Box display="flex" flexDirection="column" p={2}>
-        <Link to="/">
+        <Link to={`/shoes/${shoes.id}`}>
           <ShoesName className="hover:text-primary">{shoes.name}</ShoesName>
         </Link>
         <Box display="flex" mt={2} gap={2} alignItems="center" justifyContent="space-between">

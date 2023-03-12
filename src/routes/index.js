@@ -2,9 +2,9 @@ import ForgetPage from '@/pages/auth/forget';
 import LoginPage from '@/pages/auth/login';
 import RegisterPage from '@/pages/auth/register';
 import ResetPasswordPage from '@/pages/auth/reset-password';
-import CartPage from '@/pages/cart/Cart';
+import CartPage from '@/pages/cart';
 import HomePage from '@/pages/home';
-import ShoesDetailPage from '@/pages/shoes-detail/ShoesDetail';
+import ShoesDetailPage from '@/pages/shoes-detail';
 
 export const routes = [
   {
