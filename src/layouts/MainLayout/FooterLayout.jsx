@@ -10,17 +10,6 @@ function FooterLayout() {
         <Grid container spacing={3}>
           <Grid item xs={6} md={3}>
             <Stack>
-              <h3 className="text-lg font-semibold uppercase mb-2">Nhà Phân Phối Độc Quyền</h3>
-              <Stack spacing={1} className="cursor-pointer">
-                <p className="hover:text-primary">CÔNG TY CP THỜI TRANG ABC </p>
-                <p className="hover:text-primary">210 Tôn Đức Thắng, Hàng Bột, Đống Đa, Hà Nội</p>
-                <p className="hover:text-primary">Email: contact@peaksport.vn</p>
-                <p className="hover:text-primary">Hotline: 0866550286</p>
-              </Stack>
-            </Stack>
-          </Grid>
-          <Grid item xs={6} md={3}>
-            <Stack>
               <h3 className="text-lg font-semibold uppercase mb-2">DANH MỤC NỔI BẬT</h3>
               <Stack spacing={1} className="cursor-pointer">
                 <p className="hover:text-primary">Giày thể thao</p>
@@ -37,6 +26,17 @@ function FooterLayout() {
                 <p className="hover:text-primary">Chính sách bán hàng</p>
                 <p className="hover:text-primary">Chính Sách Đổi Trả & Bảo Hành</p>
                 <p className="hover:text-primary">Chính sách bảo mật</p>
+              </Stack>
+            </Stack>
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Stack>
+              <h3 className="text-lg font-semibold uppercase mb-2">Nhà Phân Phối Độc Quyền</h3>
+              <Stack spacing={1} className="cursor-pointer">
+                <p className="hover:text-primary">CÔNG TY CP THỜI TRANG ABC </p>
+                <p className="hover:text-primary">210 Tôn Đức Thắng, Hàng Bột, Đống Đa, Hà Nội</p>
+                <p className="hover:text-primary">Email: contact@peaksport.vn</p>
+                <p className="hover:text-primary">Hotline: 0866550286</p>
               </Stack>
             </Stack>
           </Grid>
