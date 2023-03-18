@@ -97,8 +97,8 @@ function Home() {
       </Box>
       <Grid container spacing={2} width="100%">
         {shoesList.map((shoes) => (
-          <Grid item xs={6} md={3}>
-            <ShoesItem key={shoes.id} shoes={shoes} />
+          <Grid key={shoes.id} item xs={6} md={3}>
+            <ShoesItem shoes={shoes} />
           </Grid>
         ))}
       </Grid>

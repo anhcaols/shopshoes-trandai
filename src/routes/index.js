@@ -4,6 +4,7 @@ import RegisterPage from '@/pages/auth/register';
 import ResetPasswordPage from '@/pages/auth/reset-password';
 import CartPage from '@/pages/cart';
 import HomePage from '@/pages/home';
+import SearchPage from '@/pages/search';
 import ShoesDetailPage from '@/pages/shoes-detail';
 
 export const routes = [
@@ -38,5 +39,9 @@ export const routes = [
   {
     path: '/cart',
     component: CartPage,
+  },
+  {
+    path: '/search',
+    component: SearchPage,
   },
 ];

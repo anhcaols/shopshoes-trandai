@@ -148,7 +148,7 @@ function HeaderLayout() {
       </HeaderNav>
       <Box display="flex" alignItems="center" justifyContent="flex-end">
         {/* Not login */}
-        <Link to="/" className="hover:text-primary ">
+        <Link to="/search" className="hover:text-primary ">
           <SearchOutlined />
         </Link>
         <Box className="px-6">

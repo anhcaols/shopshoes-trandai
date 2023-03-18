@@ -18,7 +18,6 @@ function RegisterPage() {
       <form action="#">
         <Stack spacing={3}>
           <Box>
-            <h3 className="text-[42px]">Đăng ký</h3>
             <p className="text-[#b2bec3] mt-2">
               Vui lòng đăng ký tài khoản cá nhân của bạn nếu bạn muốn sử dụng tất cả các sản phẩm của chúng tôi.
             </p>

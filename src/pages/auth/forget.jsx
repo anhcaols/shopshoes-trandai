@@ -14,7 +14,6 @@ function ForgetPage() {
     <Fragment>
       <form action="#">
         <Stack spacing={3}>
-          <h3 className="text-[42px]">Quên mật khẩu</h3>
           <p className="text-[#b2bec3] mt-2">
             {' '}
             Chúng tôi sẽ gửi email cho bạn các hướng dẫn về cách đặt lại mật khẩu của bạn.

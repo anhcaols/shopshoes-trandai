@@ -15,7 +15,6 @@ function ResetPasswordPage() {
       <form action="#">
         <Stack spacing={3}>
           <Box>
-            <h3 className="text-[42px]">Đổi mật khẩu</h3>
             <p className="text-[#b2bec3] mt-2">Xác minh email được thực hiện. Vui lòng chọn mật khẩu khác.</p>
           </Box>
           <TextField name="password" label="Mật khẩu" fullWidth />

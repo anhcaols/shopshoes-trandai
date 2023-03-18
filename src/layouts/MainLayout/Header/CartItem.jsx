@@ -18,7 +18,7 @@ function CartItem({ cart }) {
     <Box>
       <Divider className="pt-2" />
       <Box display="flex" gap={2} alignItems="center" className="relative">
-        <Box className="w-30 h-24 ">
+        <Box className="w-[155px] h-[70px] ">
           <Link to={`/shoes/${cart.id}`}>
             <img className="w-full h-full " src={cart.image} alt="img" />
           </Link>

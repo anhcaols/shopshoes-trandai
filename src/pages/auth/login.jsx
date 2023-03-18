@@ -15,7 +15,6 @@ function LoginPage() {
       <form action="#">
         <Stack spacing={3}>
           <Box>
-            <h3 className="text-[42px]">Đăng ký</h3>
             <p className="text-[#b2bec3] mt-2">Chào mừng trở lại, vui lòng đăng nhập vào tài khoản của bạn.</p>
           </Box>
           <TextField name="email" label="Email" fullWidth />
