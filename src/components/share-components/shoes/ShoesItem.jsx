@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Box, Typography } from '@mui/material';
+import { Box, Rating, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -34,6 +34,7 @@ function ShoesItem({ shoes }) {
           <p className=" text-lg text-[#cc1e1e] font-medium">
             {shoes.price} <span className="text-xl text-[#cc1e1e] font-semibold">₫</span>
           </p>
+          <Rating readOnly name="half-rating" defaultValue={shoes.scoreRate} size="small" precision={0.5} />
         </Box>
       </Box>
     </ShoesWrapper>
