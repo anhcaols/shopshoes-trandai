@@ -1,3 +1,6 @@
+import AdminPage from '@/pages/admin';
+import AdminLoginPage from '@/pages/admin/auth/login';
+import AdminRegisterPage from '@/pages/admin/auth/register';
 import ForgetPage from '@/pages/auth/forget';
 import LoginPage from '@/pages/auth/login';
 import RegisterPage from '@/pages/auth/register';
@@ -43,5 +46,21 @@ export const routes = [
   {
     path: '/search',
     component: SearchPage,
+  },
+
+  {
+    path: '/admin',
+    component: AdminPage,
+    layout: 'AdminLayout',
+  },
+  {
+    path: '/admin/auth/login',
+    component: AdminLoginPage,
+    layout: 'AuthenticationLayout',
+  },
+  {
+    path: '/admin/auth/register',
+    component: AdminRegisterPage,
+    layout: 'AuthenticationLayout',
   },
 ];

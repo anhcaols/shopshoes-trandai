@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import AuthenticationLayout from '@/layouts/AuthenticationLayout/AuthenticationLayout';
+import AdminLayout from './layouts/AdminLayout/AdminLayout';
 import MainLayout from '@/layouts/MainLayout/MainLayout';
 import { routes } from '@/routes';
 
@@ -10,6 +11,9 @@ function App() {
         let Layout = MainLayout;
         if (route.layout === 'AuthenticationLayout') {
           Layout = AuthenticationLayout;
+        }
+        if (route.layout === 'AdminLayout') {
+          Layout = AdminLayout;
         }
         const Page = route.component;
 
